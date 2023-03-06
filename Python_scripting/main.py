@@ -18,7 +18,6 @@ def modify_list(data_into_list):
 def create_new_data(modified_list):
     f = open("Modified.json", "a")
     for data in modified_list:
-        # print(x)
         f.write('"'+str(data["pixel_id"])+'"'+': [')
         f.write('{"date":"'+str(data["date"])+'",'+'"conversions": '+str(data["conversions"])+'},')
         f.write('{"date":"'+str(data["date"])+'",'+'"conversions": '+str(data["conversions"])+'}],')
